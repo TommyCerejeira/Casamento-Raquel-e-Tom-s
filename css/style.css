@@ -1,3 +1,15 @@
+@media screen and (max-width: 768px) {
+  .fh5co-cover {
+    background-position: center !important;
+  }
+}
+
+@media screen and (max-width: 3000px) {
+  .fh5co-cover {
+    background-position: center !important;
+  }
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -215,7 +227,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -310,7 +322,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: unset;
+  background-position: center;
   position: relative;
   width: 100%;
 }
@@ -773,13 +785,13 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #274e13;
   padding-left: 10px;
   padding-right: 10px;
@@ -804,7 +816,6 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   top: .05em;
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1007,11 +1018,14 @@ form label {
 #fh5co-started,
 #fh5co-footer,
 #fh5co-event,
-#fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
   padding: 7em 0;
+  clear: both;
+}
+#fh5co-couple-story {
+  padding: 1em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1020,13 +1034,16 @@ form label {
   #fh5co-started,
   #fh5co-footer,
   #fh5co-event,
-  #fh5co-couple-story,
   #fh5co-couple,
   #fh5co-gallery,
   .fh5co-section {
     padding: 3em 0;
   }
+  #fh5co-couple-story {
+    padding: 1em 0;
+  }
 }
+
 
 .fh5co-section-gray {
   background: rgba(0, 0, 0, 0.04);
@@ -1236,7 +1253,7 @@ form label {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 100px;
   height: 100px;
 }
@@ -1486,7 +1503,6 @@ form label {
   position: absolute;
   right: 0px;
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1849,6 +1865,4 @@ form label {
 
 .js .animate-box {
   opacity: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}}
