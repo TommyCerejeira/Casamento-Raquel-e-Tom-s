@@ -188,7 +188,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span></span>
 					<h2>Um bocadinho da nossa história</h2>
-					<p>Já contamos com mais de 11 anos em conjunto! Aqui estão algumas fotografias dos nossos melhores momentos.</p>
+					<p>Já contamos com mais de 11 anos em conjunto! Aqui estão fotografias de alguns dos nossos melhores momentos.</p>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
@@ -213,6 +213,7 @@
 							max-height: 80vh;
 							border-radius: 10px;
 							box-shadow: 0 0 20px #000;
+							z-index: 10000;
 						}
 						.gallery-popup .close-cross {
 							position: absolute;
@@ -228,24 +229,55 @@
 						.gallery-popup .close-cross:hover {
 							color: #ffb6b6;
 						}
+						.gallery-arrow {
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							font-size: 4rem;
+							color: #fff;
+							cursor: pointer;
+							font-weight: bold;
+							z-index: 10001;
+							background: rgba(0,0,0,0.2);
+							border-radius: 50%;
+							width: 60px;
+							height: 60px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							user-select: none;
+							transition: background 0.2s, color 0.2s;
+						}
+						.gallery-arrow:hover {
+							background: rgba(255,255,255,0.2);
+							color: #ffb6b6;
+						}
+						.gallery-arrow.left {
+							left: 30px;
+						}
+						.gallery-arrow.right {
+							right: 30px;
+						}
 					</style>
 
 					<div class="gallery-popup" id="galleryPopup">
 						<span class="close-cross" id="closeGalleryPopup">&times;</span>
+						<span class="gallery-arrow left" id="galleryArrowLeft">&#8592;</span>
 						<img id="galleryPopupImg" src="" alt="Gallery Photo" />
+						<span class="gallery-arrow right" id="galleryArrowRight">&#8594;</span>
 					</div>
 
 					<ul id="fh5co-gallery-list">
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/FB_IMG_1452474637288.jpeg); ">
-							<a href="#" class="gallery-photo-link" data-img="images/Nossas/FB_IMG_1452474637288.jpeg">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/Faculdade2.jpeg); ">
+							<a href="#" class="gallery-photo-link" data-img="images/Nossas/Faculdade2.jpeg">
 								<div class="case-studies-summary">
 									<h2>Faculdade</h2>
 								</div>
 							</a>
 						</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/Erasmus.jpeg); ">
-						<a class="color-2 gallery-photo-link" href="#" data-img="images/Nossas/Erasmus.jpeg">
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/Erasmus2.jpeg); ">
+						<a class="color-2 gallery-photo-link" href="#" data-img="images/Nossas/Erasmus2.jpeg">
 							<div class="case-studies-summary">
 								<h2>Erasmus</h2>
 							</div>
@@ -253,30 +285,30 @@
 					</li>
 
 
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/viagem_europa.jpeg); ">
-						<a class="color-3 gallery-photo-link" href="#" data-img="images/Nossas/viagem_europa.jpeg">
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/europa.jpeg); ">
+						<a class="color-3 gallery-photo-link" href="#" data-img="images/Nossas/europa.jpeg">
 							<div class="case-studies-summary">
-								<h2>Viagem pela Europa</h2>
+								<h2>Viagens pela Europa</h2>
 							</div>
 						</a>
 					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/Portugal.jpeg); ">
-						<a class="color-4 gallery-photo-link" href="#" data-img="images/Nossas/Portugal.jpeg">
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/Portugal3.jpeg); ">
+						<a class="color-4 gallery-photo-link" href="#" data-img="images/Nossas/Portugal3.jpeg">
 							<div class="case-studies-summary">
 								<h2>Explorar Portugal</h2>
 							</div>
 						</a>
 					</li>
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/Neve.jpeg); ">
-							<a class="color-3 gallery-photo-link" href="#" data-img="images/Nossas/Neve.jpeg">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/Neve2.jpeg); ">
+							<a class="color-3 gallery-photo-link" href="#" data-img="images/Nossas/Neve2.jpeg">
 								<div class="case-studies-summary">
-									<h2>Viagem à neve</h2>
+									<h2>Viagens à neve</h2>
 								</div>
 							</a>
 						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/tailandia.jpeg); ">
-							<a class="color-4 gallery-photo-link" href="#" data-img="images/Nossas/tailandia.jpeg">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/Nossas/Tailandia\ 2.jpeg); ">
+							<a class="color-4 gallery-photo-link" href="#" data-img="images/Nossas/Tailandia 2.jpeg">
 								<div class="case-studies-summary">
 									<h2>Tailândia</h2>
 								</div>
@@ -374,7 +406,7 @@
 		<div class="container">
 			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast">
 					<h2>O melhor presente é estar presente!</h2>
-					<p>Se fizeres questão de contribuir para o nosso futuro, começando pela maravilhosa lua de mel, ficamos desde já extremamente agradecidos com uma contruição para a nossa conta:</p> <u>PT50 0023 0000 45800827464 94</u>
+					<p>Se fizeres questão de contribuir para a nossa lua de mel, ficamos desde já extremamente agradecidos com uma contribuição para a nossa conta:</p> <u>PT50 0023 0000 45800827464 94</u>
 			</div>
 		</div>	
 	</div>
@@ -411,20 +443,34 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script>
-	// Gallery popup logic
+	// Gallery popup logic with arrows
 	document.addEventListener('DOMContentLoaded', function() {
 		var links = document.querySelectorAll('.gallery-photo-link');
 		var popup = document.getElementById('galleryPopup');
 		var popupImg = document.getElementById('galleryPopupImg');
 		var closeBtn = document.getElementById('closeGalleryPopup');
+		var arrowLeft = document.getElementById('galleryArrowLeft');
+		var arrowRight = document.getElementById('galleryArrowRight');
 
-		links.forEach(function(link) {
+		// Collect all image sources in order
+		var imgList = Array.from(links).map(function(link) {
+			return link.getAttribute('data-img');
+		});
+		var currentIndex = 0;
+
+		function showImage(index) {
+			if (index < 0) index = imgList.length - 1;
+			if (index >= imgList.length) index = 0;
+			currentIndex = index;
+			popupImg.src = imgList[currentIndex];
+			popup.style.display = 'flex';
+			document.body.style.overflow = 'hidden';
+		}
+
+		links.forEach(function(link, idx) {
 			link.addEventListener('click', function(e) {
 				e.preventDefault();
-				var imgSrc = this.getAttribute('data-img');
-				popupImg.src = imgSrc;
-				popup.style.display = 'flex';
-				document.body.style.overflow = 'hidden';
+				showImage(idx);
 			});
 		});
 
@@ -434,7 +480,16 @@
 			document.body.style.overflow = '';
 		});
 
-		// Also close popup when clicking outside the image
+		arrowLeft.addEventListener('click', function(e) {
+			e.stopPropagation();
+			showImage(currentIndex - 1);
+		});
+		arrowRight.addEventListener('click', function(e) {
+			e.stopPropagation();
+			showImage(currentIndex + 1);
+		});
+
+		// Also close popup when clicking outside the image or arrows
 		popup.addEventListener('click', function(e) {
 			if (e.target === popup) {
 				popup.style.display = 'none';
